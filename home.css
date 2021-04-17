@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 * {
     box-sizing: border-box;
     margin: 0;
@@ -249,8 +250,7 @@ footer button a {
     color: #fff;
     font-weight: 700;
     width: 100px;
-    padding: 10px 20px;
-    border: 1px solid brown;
+    padding: 10px 23px;
     background-color: rgb(179, 41, 16);
     border-radius: 3px;
 }
@@ -262,12 +262,23 @@ footer button:hover a{
 
 
 footer .my-form {
-    width: 30%;
+    display: flex;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 50px;
-    margin-top: 10px;
-    border: 1px solid rgb(179, 41, 16);
+    border: 1px solid brown;
+
+}
+
+
+footer .my-form i {
+    width: 15%;
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-top: 7px;
+    background-color: rgb(196, 49, 23);
+    color: #fff;
+    cursor: pointer;
 }
 
 footer input {
@@ -277,11 +288,50 @@ footer input {
     border: 0;
 }
 
+
+footer .flex {
+    justify-content: space-around;
+}
+
+footer .col {
+    width: 40%;
+}
+
+footer .social-link {
+    padding: 20px;
+    text-align: left;
+}
+
+footer .social-link a {
+    margin-right: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
+    color: black;
+    text-align: left;
+    cursor: pointer;
+    color: rgb(179, 41, 16);
+}
+
+footer .social-link a:hover  {
+    color: rgb(105, 20, 5);
+    transition: 0.3s;
+}
+
+footer .social-link h5 {
+    text-align: left;
+    margin-bottom: 5px;
+}
+
 ::placeholder {
     font-weight: 700;
     text-transform: capitalize;
 }
 
+@media(max-width: 770px) {
+    footer .my-form i {
+        width: 25%;
+    }  
+}
 @media(max-width: 450px) {
     .container {
         width: 90%;
@@ -355,5 +405,19 @@ footer input {
 
     footer .my-form {
         width: 80%;
+    }
+    footer .flex {
+        flex-wrap: wrap-reverse;
+    }
+    footer .col {
+        width: 100%;
+    }
+    footer .my-form {
+        margin: 0;
+    }
+    footer .social-link {
+        padding: 0;
+        padding-top: 20px;
+        
     }
 }
